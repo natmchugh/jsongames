@@ -1,0 +1,3 @@
+_welcome:
+    path:  /
+    defaults: { _controller: FishtrapJsongamesBundle:Welcome:index }

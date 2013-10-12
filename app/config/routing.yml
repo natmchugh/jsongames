@@ -1,2 +1,2 @@
-_fishtrap_bruteforce:
-    resource: "@FishtrapBruteforceBundle/Resources/config/routing.yml"
+_fishtrap_Jsongames:
+    resource: "@FishtrapJsongamesBundle/Resources/config/routing.yml"
