@@ -1,0 +1,2 @@
+_fishtrap_bruteforce:
+    resource: "@FishtrapBruteforceBundle/Resources/config/routing.yml"
