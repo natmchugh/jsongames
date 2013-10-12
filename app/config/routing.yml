@@ -1,2 +1,5 @@
 _fishtrap_Jsongames:
     resource: "@FishtrapJsongamesBundle/Resources/config/routing.yml"
+
+mremi_contact_form:
+    resource: "@MremiContactBundle/Resources/config/routing.xml"

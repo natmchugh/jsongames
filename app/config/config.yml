@@ -10,6 +10,7 @@ framework:
         resource: "%kernel.root_dir%/config/routing.yml"
         strict_requirements: ~
     form:            ~
+    translator: ~
     csrf_protection: ~
     validation:      { enable_annotations: true }
     templating:
@@ -64,3 +65,21 @@ swiftmailer:
     username:  %mailer_user%
     password:  %mailer_password%
     spool:     { type: memory }
+
+# app/config/config.yml
+mremi_contact:
+    store_data:            false
+    contact_class:         Mremi\ContactBundle\Model\Contact
+
+    form:
+        type:              mremi_contact
+        name:              contact_form
+        validation_groups: [Default]
+        subject_provider:  mremi_contact.subject_provider.noop
+        captcha_disabled:  false
+        captcha_type:      genemu_captcha
+
+    email:
+        mailer:            mremi_contact.mailer.twig_swift
+        recipient_address: nat@fishtrap.co.uk
+        template:          MremiContactBundle:Contact:email.txt.twig

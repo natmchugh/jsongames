@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "e67df720e8a1a2e0e6df41d91d788e48",
+    "hash": "df424d4a22ce881dfcb7bcc034670cf0",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -605,6 +605,77 @@
             "time": "2013-05-11 07:51:12"
         },
         {
+            "name": "genemu/form-bundle",
+            "version": "v2.2.1",
+            "target-dir": "Genemu/Bundle/FormBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/genemu/GenemuFormBundle.git",
+                "reference": "78fcd307a69b499241d7f0fa5c1b378e77358f16"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/genemu/GenemuFormBundle/zipball/78fcd307a69b499241d7f0fa5c1b378e77358f16",
+                "reference": "78fcd307a69b499241d7f0fa5c1b378e77358f16",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2",
+                "symfony/form": "~2.3",
+                "symfony/framework-bundle": "~2.3"
+            },
+            "require-dev": {
+                "doctrine/doctrine-bundle": "1.*",
+                "doctrine/mongodb-odm-bundle": "*",
+                "doctrine/orm": "2.*",
+                "phpunit/phpunit": "3.7.*",
+                "propel/propel-bundle": "*",
+                "symfony/doctrine-bridge": "~2.3",
+                "symfony/finder": "2.*"
+            },
+            "suggest": {
+                "symfony/doctrine-bundle": "In order to use some form types with Doctrine",
+                "symfony/finder": "For an image type",
+                "symfony/mongodb-odm-bundle": "For MongoDB integration",
+                "symfony/twig-bridge": "For integration into Twig templates"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Genemu\\Bundle\\FormBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Olivier Chauvel",
+                    "email": "olivier@generation-multiple.com"
+                },
+                {
+                    "name": "Community contributions",
+                    "homepage": "https://github.com/genemu/GenemuFormBundle/contributors"
+                },
+                {
+                    "name": "Bilal Amarni",
+                    "email": "bilal.amarni@gmail.com"
+                }
+            ],
+            "description": "Extra form types for your Symfony2 projects",
+            "keywords": [
+                "extra form",
+                "form"
+            ],
+            "time": "2013-07-31 22:28:58"
+        },
+        {
             "name": "incenteev/composer-parameter-handler",
             "version": "v2.0.0",
             "target-dir": "Incenteev/ParameterHandler",
@@ -836,6 +907,98 @@
                 "psr-3"
             ],
             "time": "2013-07-28 22:38:30"
+        },
+        {
+            "name": "mremi/bootstrap-bundle",
+            "version": "v3.0.0",
+            "target-dir": "Mremi/BootstrapBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mremi/BootstrapBundle.git",
+                "reference": "5d41d4b947057dbaec479776983a8e394c5326a1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mremi/BootstrapBundle/zipball/5d41d4b947057dbaec479776983a8e394c5326a1",
+                "reference": "5d41d4b947057dbaec479776983a8e394c5326a1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "symfony/framework-bundle": "~2.3"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-0": {
+                    "Mremi\\BootstrapBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rémi Marseille",
+                    "email": "marseille.remi@gmail.com"
+                }
+            ],
+            "description": "A simple way to add the Bootstrap framework in a Symfony2 project",
+            "homepage": "https://github.com/mremi/BootstrapBundle",
+            "keywords": [
+                "Symfony2",
+                "bootstrap",
+                "css",
+                "javascript"
+            ],
+            "time": "2013-09-15 16:56:16"
+        },
+        {
+            "name": "mremi/contact-bundle",
+            "version": "dev-master",
+            "target-dir": "Mremi/ContactBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mremi/ContactBundle.git",
+                "reference": "5b79a7c5a0e9fa2e1a8311ef7a8790f9584abfe9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mremi/ContactBundle/zipball/5b79a7c5a0e9fa2e1a8311ef7a8790f9584abfe9",
+                "reference": "5b79a7c5a0e9fa2e1a8311ef7a8790f9584abfe9",
+                "shasum": ""
+            },
+            "require": {
+                "genemu/form-bundle": "~2.2",
+                "mremi/bootstrap-bundle": "~3.0",
+                "php": ">=5.3.3",
+                "symfony/form": "~2.3",
+                "symfony/framework-bundle": "~2.3"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-0": {
+                    "Mremi\\ContactBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rémi Marseille",
+                    "email": "marseille.remi@gmail.com"
+                }
+            ],
+            "description": "Implementation of a contact form for Symfony2",
+            "homepage": "https://github.com/mremi/ContactBundle",
+            "keywords": [
+                "Symfony2",
+                "contact",
+                "form"
+            ],
+            "time": "2013-10-04 13:56:22"
         },
         {
             "name": "psr/log",
@@ -1500,9 +1663,9 @@
 
     ],
     "minimum-stability": "stable",
-    "stability-flags": [
-
-    ],
+    "stability-flags": {
+        "mremi/contact-bundle": 20
+    },
     "platform": {
         "php": ">=5.3.3"
     },
