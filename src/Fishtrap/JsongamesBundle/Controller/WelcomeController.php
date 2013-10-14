@@ -12,8 +12,8 @@ class WelcomeController extends Controller
         return $this->render('FishtrapJsongamesBundle:Welcome:index.html.twig');
     }
 
-    public function aboutAction()
+    public function faqAction()
     {
-        
+        return $this->render('FishtrapJsongamesBundle:Welcome:faq.html.twig');
     }
 }
